@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="grid-container">
+        <nav class="grid-items header">
+            <div class="logo">CapacityBay</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown"> <a href="#" class="drop-btn">Services</a>
+                    <!-- <ul>
+                        <div class="dropdown-content-1">
+                            <li class="dropdown--2"><a href="#">Python</a></li>
+                            <li class="dropdown--2"><a href="#">Fullstack</a></li>
+                            <li class="dropdown--2"><a href="#" class="dropbtn">Linux</a>
+                        </div>
+                         <div class="dropdown-content-2">
+                                <ul>
+                                <li><a href="#">Splunk</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">React</a></li>
+                                </ul>
+                        </div> -->
+                        <!-- </li> <!--closing tag for linux  -->
+                    <!-- </ul> --> -->
+                    </li> 
+                <li class="contact"><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="profile"><img class="profile-img" src="./WhatsApp Image 2024-06-07 at 8.28.16 AM-modified.png" alt="profile picture"></div>
+        </nav>
+        <div class="grid-items post"> 
+            <p class="post-texts">What's on your mind?</p>
+            <form action="mailto:larryjoy731@gmail.com" method="post" class="form">
+                <input type="text" name="post-text" id="post" placeholder="Write something...."> 
+                <button type="submit" class="btn-post btn">POST</button>
+            </form>
+        </div>
+        <div class="grid-items view-post">
+            <div class="view-post--top">
+                <div class="profile">
+                    <div class="profile-img"><img src="./WhatsApp Image 2024-06-07 at 8.28.16 AM-modified.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h2>Joy Girl</h2>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <p class="span__date">Jun 22, 2024</p>
+            </div>
+
+            <div class="post-section">
+                <h3>Flawless Installation</h3>
+                <div class="hair-img"><img class="hair__image" src="./hiriremy.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi omnis harum id, 
+                    molestias ipsam hic maxime dignissimos quaerat sunt quo exercitationem corrupti delectus non, 
+                    perferendis iusto obcaecati, asperiores facilis.</p>
+            </div>
+            
+        </div>
+        <div class="grid-items post-content">
+            <div class="post-content--top">
+                <div class="profile">
+                    <div class="profile-img"><img src="./Ami Hairs.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h2>Ami Hairs, LLC</h2>
+                        <p>Wig shop</p>
+                    </div>
+                </div>
+                <p class="span__date">Yesterday, 08:00pm</p>
+            </div>
+            <div class="post-section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro 
+                    aliquid asperiores nihil, unde consectetur?
+                </p>
+                <div class="hair-img"><img class="hair__image" src="./download (1).jpg" alt="anime"></div>
+            </div>
+        </div>
+
+        <div class="grid-items text-post">
+            <div class="text-post--top">
+                <div class="profile">
+                    <div class="profile-img"><img src="./Dorothy profile picture.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h2>Dorothy Bartlett</h2>
+                        <p>Graphics Designer</p>
+                    </div>
+                </div>
+                <p class="span__date">10hours ago</p>
+            </div>
+            <div class="post-section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro 
+                    aliquid asperiores nihil, unde consectetur? Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Odit deleniti autem distinctio vitae fugiat
+                     dolorum eveniet! Adipisci repellendus iste laborum.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-items suggestions"> 
+            <div id="suggestions">
+                <h2 class="blue-colour">Suggestions</h2>
+                <div class="suggest">
+                    <div class="profile-img"><img src="./TODOENZAPATOS.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h3>Todoenzapatos, NG</h3>
+                        <p>Real Estate</p>
+                        <button type="button" class="add-btn">Add</button>
+                    </div>
+                </div>
+                <div class="suggest">
+                    <div class="profile-img"><img src="./Scentiment.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h3>Scentiment, NG</h3>
+                        <p>Perfumery</p>
+                        <button type="button" class="add-btn">Add</button>
+                    </div>
+                </div>
+                <div class="suggest">
+                    <div class="profile-img"><img src="./T beauty.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h3>T-Beauty, NG</h3>
+                        <p>Hair Shop</p>
+                        <button type="button" class="add-btn">Add</button>
+                    </div>
+                </div>
+                <div class="suggest">
+                    <div class="profile-img"><img src="./SymmetryX.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h3>SymmetryX, NG</h3>
+                        <p>Shoe Shop</p>
+                        <button type="button" class="add-btn">Add</button>
+                    </div>
+                </div>
+                <div class="suggest">
+                    <div class="profile-img"><img src="./Sareey.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h3>Sareey, USA</h3>
+                        <p>Clothe Store</p>
+                        <button type="button" class="add-btn">Add</button>
+                    </div>
+                </div>
+                <div class="suggest">
+                    <div class="profile-img"><img src="./Yellow puff.png" alt="profile picture"></div>
+                    <div class="view-post__heading"><h3>Yellow Puff, NG</h3>
+                        <p>Perfume Shop</p>
+                        <button type="button" class="add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="color-blue">
+                <button type="button" class="btn-last">See More</button>
+            </div>
+    </div>
+</body>
+</html>

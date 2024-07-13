@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.grid-container{
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: #e2e1e1;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 10% repeat(3, 1fr);
+    /* grid-template-areas: 
+    "header header header header"
+    "post post post-content suggestions"
+    " post post post-content suggestions"
+    " view-post view-post post-content suggestions"
+    " view-post view-post text-post suggestions"
+    " view-post view-post text-post suggestions"; */
+    grid-template-areas: 
+    "header header header"
+    "post post-content suggestions"
+    "view-post post-content suggestions"
+    "view-post text-post suggestions";
+    padding: 1rem;
+    gap: 1.5rem;
+}
+.grid-container .grid-items.header{
+    background-color: rgb(111, 5, 111);
+    grid-area: header;
+    
+}
+
+.grid-container .grid-items.post{
+    background-color: #fff;
+    grid-area: post;
+    /* margin: 1rem; */
+    font-size: 1.7rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.grid-container .grid-items.view-post{
+    background-color: #fff;
+    grid-area: view-post;
+    /* margin: 1rem; */
+    border-radius: 1.1rem;
+    padding: 1.5rem;
+}
+.grid-container .grid-items.post-content{
+    background-color: #fff;
+    grid-area: post-content;
+    /* margin: 1rem; */
+    border-radius: 1.1rem;
+    padding: 1.5rem;
+}
+.grid-container .grid-items.text-post{
+    background-color: #fff;
+    grid-area: text-post;
+    /* margin: 1rem; */
+    border-radius: 1.1rem;
+    padding: 1.5rem;
+}
+.grid-container .grid-items.suggestions{
+    background-color: #fff;
+    grid-area: suggestions;
+    /* margin: 1rem; */
+    border-radius: 1.1rem;
+    padding: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul{
+   word-spacing: 3rem;
+   overflow: hidden;
+   list-style: none;
+}
+li{
+    float: left;
+}
+li a, .drop-btn{
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #eeebeb;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.contact{
+    word-spacing: -.4rem;
+}
+.profile-img{
+    width: 5rem;
+}
+.logo{
+    font-size: 3rem;
+    color: rgb(11, 183, 11);
+    font-weight: 700;
+}
+.post-texts{
+    font-weight: bold;
+    font-size: 2rem;
+   letter-spacing: .05rem;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#post{
+    border: none;
+    outline: none;
+}
+.btn-post{
+    border: none;
+    background-color: rgb(111, 5, 111);
+    padding: 1rem 1.5rem;
+    color: #fff;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+}
+.view-post--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    font-size: 1.5em;
+}
+.hair__image{
+    width: 100%;
+    height: 250px;
+}
+.hair-img{
+    width: 87%;
+    margin: 0 auto;
+}
+.post-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 1.3rem;
+    font-size: 1.6rem;
+}
+.post-section:last-child{
+    padding-bottom: 1.2rem;
+}
+.post-content--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-post--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    line-height: 2rem;
+}
+.suggest{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 1.1em;
+    margin-top: 3.5rem;
+}
+.blue-colour{
+    color: rgb(111, 5, 111);
+}
+.add-btn{
+    background-color: rgb(111, 5, 111);
+    color: #eeebeb;
+  border: none;  
+  padding: .8rem 1.3rem;
+  border-radius: 1.5rem;
+}
+.color-blue{
+    margin-top: 2rem;
+    text-align: center;
+}
+.btn-last{
+    background-color: rgb(111, 5, 111);
+    color: #eeebeb;
+    border: none;
+    padding: 1rem 2.5rem;
+}
+/* .dropdown--2{
+    display: flex;
+    flex-direction: column;
+} */
+/* .dropdown-content-1{
+    display: none;
+    position: absolute;
+    background-color: #eeebeb;
+    min-width: 16rem;
+    box-shadow: 0px 8px 16px 0px rgba(red, rgba(11, 24, 11, 0.233), blue, alpha);
+    z-index: 1;
+}
+.dropdown:hover .drop-btn:hover{
+    background-color: #915e5e;
+} */
